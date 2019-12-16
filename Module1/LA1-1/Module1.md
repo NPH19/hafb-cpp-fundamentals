@@ -57,3 +57,10 @@ int main(){
 	return 0;
 }
 ```
+
+## Doxygen documentation
+```cpp
+// Add the plugin to VSCode
+
+// Run /** and <Enter>
+```
