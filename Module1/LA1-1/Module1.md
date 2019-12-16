@@ -47,3 +47,13 @@ $ git push
 $ g++ <file name>
 $ ./<executeable files>
 ```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	return 0;
+}
+```
