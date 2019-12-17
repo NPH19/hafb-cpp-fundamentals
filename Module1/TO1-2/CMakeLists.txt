@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-Create a Static Library
+# Create a Static Library
 add_library(factor 
   STATIC   # not dynamic (will not change)
     factor.h
