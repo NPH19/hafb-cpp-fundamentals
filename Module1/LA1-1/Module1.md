@@ -60,6 +60,7 @@ int main(){
 
 ## Doxygen documentation
 ```cpp
+// Add Code Spell Extension
 // Add the plugin to VSCode
 
 // Run /** and <Enter>
