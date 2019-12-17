@@ -11,6 +11,7 @@
 #include <stdio.h>
 
 int Sum(int num1, int num2);
+void UpdateStep(int& step);
 
 
 #endif /* my_functions_hpp */
