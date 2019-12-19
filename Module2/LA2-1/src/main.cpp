@@ -1,6 +1,5 @@
 #include <iostream>
-
-using namespace std;
+#include <string>
 
 /**
  * @brief Shows how to define and use a string object
@@ -12,13 +11,15 @@ using namespace std;
  */
 int main() {
   // create a variable of type string
+  std::string name = "the beast";
 
   // print it out
-
+  std::cout << name << std::endl;
   // get a string from a user
-
+  std::cout<< "Write some words: ";
+  std::cin >> name;
   // add two strings together
-
+  
   // how long is the string
 
   // use [] to get an individual character

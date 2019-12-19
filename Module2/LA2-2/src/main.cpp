@@ -1,6 +1,7 @@
 #include <array>
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -12,23 +13,49 @@ using namespace std;
  *
  * @return int 0 means function exited with success
  */
+
+const int kMaxSize = 24;
+
 int main() {
   // create an ojbect of type ifstream
+  std::ifstream in;
+  int age_size = 0;
+  std::array<int, kMaxSize> ages;
+  ages.fill(-1);
 
   // open the file age.txt
-
+  in.open("../age.txt");
+  if(in.fail()){
+    std::cout << "Unable to open file\nshutting down";
+  }
 
   // read from the age file and store values in an array
-
-
+  while (age_size < kMaxSize && in >> ages[age_size]) {
+    /* code */
+    age_size++;
+  }
+  in.close();
   // print out the values in the array
-
+  for(auto age: ages)
+    std::cout<<age<<std::endl;
 
   // read to the end of the file
+  std::array<string, kMaxSize> names;
+  int name_size = 0;
+  names.fill("");
+  in.open("../name.txt");
+  if(in.fail()){
+    std::cout << "Unable to open file\nshutting down";
+  }
 
+  while (name_size < kMaxSize && getline(in, names[name_size])) {
+    /* code */
+    name_size++;
+  }
 
   // print out the valid values in the array
-
+  for(auto name: names)
+    std::cout<<name<<std::endl;
 
   // print out the all the values in the array
 
